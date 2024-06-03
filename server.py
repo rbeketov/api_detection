@@ -42,6 +42,7 @@ def upload():
         else:
             result = {'result': False}
         
+        print(f"Отдаём {result}")
         return jsonify(result)  # Отправляем результат в виде JSON-ответа
     except Exception as e:
         return str(e), 400
